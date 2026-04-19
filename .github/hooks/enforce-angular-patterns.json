@@ -1,0 +1,13 @@
+{
+  "name": "enforce-angular-patterns",
+  "description": "Hook para validar patrones Angular zoneless antes de usar herramientas.",
+  "trigger": "pre-tool-use",
+  "rules": [
+    {
+      "type": "command",
+      "command": "python3 .github/scripts/validate_angular_structure.py",
+      "windows": "python .github/scripts/validate_angular_structure.py",
+      "timeout": 10
+    }
+  ]
+}
